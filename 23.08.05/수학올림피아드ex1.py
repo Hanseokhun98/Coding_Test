@@ -23,18 +23,14 @@ def minimum (list):
         prev_value1 = list[0] # 최솟값
         prev_value2 = list[1] # 두번째로 작은값
         result_num += prev_value1 + prev_value2 # 결과값에 더하기
-        
         print(f"{list_length+1}번째로 뽑은 수는 ( {prev_value1}와 {prev_value2} 입니다.)")
         
         del list[0:2] #해당값을 원래 list에서 삭제
         list.append(prev_value1 + prev_value2) #해당 리스트에 합한값을 추가
-        list_length += 1 # 반복문을 위한 인자(1씩 올려줘야 다음단계로 넘어가서 위 코드를 수행할 수 있음)
-
 
 
 # %%
 # 예시1
 ex1 = [1,2,3,4,5,6,7,8]
 minimum(ex1)
-
 # %%
