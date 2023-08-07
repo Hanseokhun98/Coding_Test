@@ -61,3 +61,19 @@ for char in s:
 # isdigit : 문자열의 모양이 숫자처럼 생겼다면 숫자로 변환
 # isnumeric : isdigit + 로마숫자 변환
 # isdecimal : 정수 형태의 10진수 변환
+
+# 5. 문자가 알파벳/한글 또는 숫자인지 검사(isalnum)
+
+s = "안녕, Python3"
+for char in s:
+    print(char.isalnum(), end='')
+
+# True True False False True True True True True True True
+
+# 6. 문자열을 아스키 코드값으로(ord), 아스키 코드값을 문자열로(chr)
+char = 'A'
+code_point = ord(char)
+print(code_point) # 출력: 65
+
+new_char = chr(code_point)
+print(new_char) # 출력: A
